@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_resto/pages/components/navigation_drawer_auth.dart';
+import 'package:my_resto/pages/user/menu_card_auth.dart';
 
 class DashboardPage extends StatelessWidget {
   @override
@@ -7,6 +8,7 @@ class DashboardPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('My Resto'),
+        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
       drawer: CustomDrawerAuth(),
       body: Row(
@@ -14,17 +16,7 @@ class DashboardPage extends StatelessWidget {
           Expanded(
             child: Container(
               color: Theme.of(context).colorScheme.primaryContainer,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text('Dashboard'),
-                    ],
-                  ),
-                ],
-              ),
+              child: SectionWithCards(),
             ),
           ),
         ], 

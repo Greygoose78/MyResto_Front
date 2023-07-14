@@ -22,7 +22,7 @@ class CustomDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.home_outlined),
+            leading: Icon(Icons.home),
             title: Text('Accueil'),
             onTap: () {
               Navigator.pop(context); // Closes the drawer
@@ -33,7 +33,7 @@ class CustomDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.login_outlined),
+            leading: Icon(Icons.login),
             title: Text('Connexion'),
             onTap: () {
               Navigator.pop(context); // Closes the drawer

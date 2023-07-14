@@ -15,7 +15,7 @@ class CustomDrawerAuth extends StatelessWidget {
               color: Theme.of(context).colorScheme.primaryContainer,
             ),
             child: Text(
-              'My Resto',
+              'Bienvenue sur votre compte MyResto !',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 24,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_resto/pages/components/navigation_drawer.dart';
+import 'package:my_resto/pages/components/menu_card_visit.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -8,6 +9,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('My Resto'),
+        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
       drawer: CustomDrawer(),
       body: Row(
@@ -15,17 +17,7 @@ class HomePage extends StatelessWidget {
           Expanded(
             child: Container(
               color: Theme.of(context).colorScheme.primaryContainer,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text('Page d\'accueil'),
-                    ],
-                  ),
-                ],
-              ),
+              child: HomeSectionWithCards(),
             ),
           ),
         ], 
